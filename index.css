@@ -1,0 +1,122 @@
+@keyframes caminar {
+    0%{
+        transform: translateX(0px) translateY(525px) 
+          
+    }
+    30%{
+        transform: translateX(500px) translateY(525px);
+    }
+    
+    50%{
+        transform: translateX(800px) translateY(300px);
+    }
+
+    70%{
+        transform: translateX(1080px) translateY(525px);
+    }
+    
+    100%{
+        transform: translateX(1850px) translateY(525px);   
+    }
+}
+@keyframes caminar2 {
+    0%{
+        transform: translateX(1850px) translateY(480px) 
+          
+    }
+    100%{
+        transform: translateX(-1000px) translateY(480px);   
+    }
+}
+@keyframes caminar3 {
+    0%{
+        transform: translateX(1850px) translateY(390px); 
+          
+    }
+    100%{
+        transform: translateX(-1000px) translateY(390px);   
+    }
+}
+@keyframes caida1 {
+    0%{
+        transform: translateX(1280px) translateY(0px); 
+          
+    }
+    50%{
+        transform: translateX(1280px) translateY(525px);   
+    }
+    100%{
+        transform: translateX(-1000px) translateY(525px);
+    }
+}
+@keyframes caida2 {
+    0%{
+        transform: translateX(1580px) translateY(0px); 
+          
+    }
+    50%{
+        transform: translateX(1580px) translateY(525px);   
+    }
+    100%{
+        transform: translateX(-1000px) translateY(525px);
+    }
+}
+@keyframes caida3 {
+    0%{
+        transform: translateX(1000px) translateY(0px); 
+          
+    }
+    50%{
+        transform: translateX(100px) translateY(525px);   
+    }
+    100%{
+        transform: translateX(-1000px) translateY(525px);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./img/Sin\ título.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    /* background-color: #27a4d1; */
+    height: 50vh;
+}
+img{
+    width: 50px;
+    animation: caminar 5s linear 0s normal forwards running;
+    transition: 0.5s all;
+}
+img:nth-child(2){
+    width: 50px;
+    animation: caminar2 6s linear 0s normal forwards running;
+    transition: 0.5s all;
+    
+}
+img:nth-child(3){
+    width: 50px;
+    animation: caminar3 6s linear 0s normal forwards running;
+    transition: 0.5s all;
+    
+}
+img:nth-child(4){
+    width: 50px;
+    animation: caida1 10s linear 0s normal forwards running;
+    transition: 0.5s all;
+    
+}img:nth-child(5){
+    width: 50px;
+    animation: caida2 13s linear 0s normal forwards running;
+    transition: 0.5s all;
+    
+}img:nth-child(6){
+    width: 50px;
+    animation: caida3 11s linear 0s normal forwards running;
+    transition: 0.5s all;
+    
+}
